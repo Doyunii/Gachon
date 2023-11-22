@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meeting Room Reservation</title>
+  <style>
+    .unavailable {
+      background-color: #888888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meeting Room Reservation</h1>
+  
+  <!-- First Page: Choose Meeting Room -->
+  <h2>Choose a Meeting Room:</h2>
+  <ul>
+    <li><a href="reservation_page.html">Meeting Room 1</a></li>
+    <li><a href="reservation_page.html">Meeting Room 2</a></li>
+    <li><a href="reservation_page.html">Meeting Room 3</a></li>
+    <!-- Add more meeting rooms as needed -->
+  </ul>
+  
+  <!-- Second Page: Choose Time Slot -->
+  <h2>Choose a Time Slot:</h2>
+  <div>
+    <label for="time-slot-11">11:00</label>
+    <input type="checkbox" id="time-slot-11" name="time-slot" value="11:00">
+    <br>
+    <label for="time-slot-12">12:00</label>
+    <input type="checkbox" id="time-slot-12" name="time-slot" value="12:00">
+    <!-- Add more time slots as needed -->
+    <br>
+    <label for="time-slot-20">20:00</label>
+    <input type="checkbox" id="time-slot-20" name="time-slot" value="20:00" class="unavailable">
+    <!-- Example of an unavailable time slot -->
+  </div>
+  
+  <!-- Third Page: Provide Contact Information -->
+  <h2>Provide Contact Information:</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <input type="submit" value="Submit Reservation">
+  </form>
+</body>
+</html>
